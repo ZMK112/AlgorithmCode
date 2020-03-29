@@ -75,7 +75,7 @@ class Solution{
             printf("%d",r->right);
             tree.push(r->right);
         }
-        tree.pop();
+        tree.pop();//
     }
      return a;
     }      
