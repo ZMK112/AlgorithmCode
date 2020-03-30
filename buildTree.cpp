@@ -52,7 +52,7 @@ int main()
 {   
     vector<int> res;
     vector<int> nums = {1, 2, 3, 4, 5, 6, 7, 8};
-    TreeNode* root = new TreeNode(-1);
+    TreeNode* root;
     root = Trees(root, nums);
     inorderTravel(root, res);
     return 0;
