@@ -71,7 +71,7 @@ TreeNode* buildTree(TreeNode* &root, vector<int>& nums, int lens, int i)
     buildTree(root->right, nums, lens, i * 2 + 2);
     return root;
 }
-
+//
 int main()
 {
     vector<int> one = {4,2,7,1,3,6,9};
