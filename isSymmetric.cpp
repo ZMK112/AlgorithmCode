@@ -33,7 +33,21 @@ struct TreeNode {
 bool symmetric(TreeNode* a, TreeNode* b)
 {
     stack<TreeNode*> s;
-    s.push()
+    s.push(a);
+    s.push(b);
+    while (!s.empty())
+    {
+        TreeNode* one = s.top();
+        s.pop();
+        TreeNode* two = s.top();
+        s.pop();
+        if (one->val != two->val)
+        {
+            /* code */
+        }
+        
+    }
+    
 }
 
 bool isSymmetric(TreeNode* root) 
