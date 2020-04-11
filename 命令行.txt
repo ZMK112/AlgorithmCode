@@ -1,0 +1,4 @@
+ zmk@zmkdeMacBook-Pro  ~/c++/now_coding   master  git config --global user.name "ZMK112"
+ zmk@zmkdeMacBook-Pro  ~/c++/now_coding   master  git config --global user.email "1109645606@qq.com"
+ zmk@zmkdeMacBook-Pro  ~/c++/now_coding   master  git remote add origin git@github.com:ZMK112/AlgorithmCode.git
+ zmk@zmkdeMacBook-Pro  ~/c++/now_coding   master  git fetch
