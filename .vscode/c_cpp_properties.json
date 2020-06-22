@@ -8,7 +8,8 @@
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "__SIZE_TYPE__=long long unsigned int"
             ],
             "intelliSenseMode": "gcc-x64"
         }
