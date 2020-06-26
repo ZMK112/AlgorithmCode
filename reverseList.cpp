@@ -37,17 +37,55 @@ ListNode* reverseList(ListNode* head) {
 }
 
 
-ListNode* reverseList(ListNode* head) {
-    ListNode* new_head = nullptr;
-    while (head)
+// ListNode* reverseList(ListNode* head) {
+//     ListNode* new_head = nullptr;
+//     while (head)
+//     {
+//         ListNode *next = head->next;
+//         head->next = new_head;
+//         new_head = head;
+//         head = next;
+//     }
+//     return new_head;
+// }
+
+ListNode* reverseBetween(ListNode* head, int m, int n) 
+{
+    int changeLens = n - m + 1;
+    ListNode *changeHead = nullptr;
+    ListNode * resHead = head;
+
+    while (head && --m)
     {
-        ListNode *next = head->next;
-        head->next = new_head;
-        new_head = head;
-        head = next;
+        changeHead = head;
+        head = head->next;
+        // m--;
     }
-    return new_head;
+    
+    ListNode* tail = head;
+    ListNode* newHead = nullptr;
+    while (head && changeLens)
+    {
+        ListNode* next = head->next;
+        head->next = newHead;
+        newHead = head;
+        head = next;
+        changeLens--;
+    }
+    tail->next = head;
+    if (changeHead)
+    {
+        changeHead->next = newHead;
+    }
+    else
+    {
+        resHead = newHead;
+    }
+    
+    return resHead;
 }
+
+
 
 int main()
 {
@@ -61,6 +99,6 @@ int main()
         p->next = tmp;
         p = p->next;
     }
-    reverseList(root);
+    reverseBetween(root,3,4);
     return 0;
 }
