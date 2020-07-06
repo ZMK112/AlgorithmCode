@@ -33,7 +33,7 @@ int inorder(TreeNode* r)
 
 int main()
 {
-    // int nums[] = {4,2,6,1,3,NULL,NULL};
-    // TreeNode* nodes = nums;
-    // int res = minDiffInBST(nodes);
+    int nums[] = {4,2,6,1,3,NULL,NULL};
+    TreeNode* nodes = nums;
+    int res = minDiffInBST(nodes);
 }
